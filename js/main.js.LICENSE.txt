@@ -1,0 +1,15 @@
+/*!
+ * dist/inputmask.min
+ * https://github.com/RobinHerbots/Inputmask
+ * Copyright (c) 2010 - 2020 Robin Herbots
+ * Licensed under the MIT license
+ * Version: 5.0.4-beta.32
+ */
+
+/**
+ * @fileoverview dragscroll - scroll area by dragging
+ * @version 0.0.8
+ * 
+ * @license MIT, see http://github.com/asvd/dragscroll
+ * @copyright 2015 asvd <heliosframework@gmail.com> 
+ */
