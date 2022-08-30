@@ -1,0 +1,402 @@
+<section class="cart-info" id="">
+    <div class='container'>
+        @include('cart-nav.html')
+        <div class="cart-info__body">
+            <h3 class="cart-info__title">Основная информация</h3>
+
+            <div class="cart-info__indicators indicators">
+
+                <div class="indicators__block">
+                    <div class="indicators__item">
+                        <div class="indicators__item-number">4 532</div>
+                        <div class="indicators__item-text">платных мест</div>
+                    </div>
+                    <div class="indicators__item">
+                        <div class="indicators__item-number">1 720</div>
+                        <div class="indicators__item-text">бюджетных мест</div>
+                    </div>
+                </div>
+
+                <div class="indicators__block">
+                    <div class="indicators__item">
+                        <div class="indicators__item-number">1 место</div>
+                        <div class="indicators__item-text">в Санкт-Петербурге</div>
+                    </div>
+                    <div class="indicators__item">
+                        <div class="indicators__item-number">12 место</div>
+                        <div class="indicators__item-text">в РФ</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-info__properties properties">
+                <ul class="properties__list list-reset">
+                    <li class="properties__item">
+                        <span>Государственный</span>
+                        <svg class="icon icon-check">
+                            <use xlink:href="#icon--check"></use>
+                        </svg>
+                    </li>
+                    <li class="properties__item">
+                        <span>Общежитие</span>
+                        <svg class="icon icon-uncheck">
+                            <use xlink:href="#icon--uncheck"></use>
+                        </svg>
+                    </li>
+                    <li class="properties__item">
+                        <span>Военная кафедра</span>
+                        <svg class="icon icon-check">
+                            <use xlink:href="#icon--check"></use>
+                        </svg>
+                    </li>
+                </ul>
+                <div class="representative">
+                    <span>Вы представитель УЗ?</span>
+                    <a href="#" class="btn btn-reset btn-light">получить доступ</a>
+                </div>
+
+            </div>
+
+            <h5 class="mark__title">Проходной балл</h5>
+
+            @include('mark.html')
+
+            <div class="full__title">
+                <h3 class="cart-info__title">Специальности</h3>
+                <div class="cart-info__subtitle"><span>432</span> специальности</div>
+                <span class="full__descr" data-da="cart-info__subtitle,1,1024,max"><span
+                        class="no-tablet">Специальности</span> МГТУ им. Н. Э. Баумана</span>
+            </div>
+
+            <div class="specialties">
+
+                <div class="specialties__body">
+                    <div class="specialties__sort">
+                        <span>Сортировать:</span>
+                        <button class="btn btn-reset btn-sort">по оплате в год</button>
+                        <button class="btn btn-reset btn-sort">по отзывам</button>
+                        <button class="btn btn-reset btn-sort">по проходному баллу</button>
+                        <button class="btn btn-reset btn-sort">по количеству бюджетных мест</button>
+                    </div>
+
+                    <div class="swiper specialties__slider">
+                        <div class="swiper-wrapper specialties__list">
+
+                            <div class="swiper-slide">
+                                <article class="specialties__item" itemscope itemtype="https://schema.org/Article">
+                                    <a href="#" class="specialties__item-img">
+                                        <picture>
+                                            <source srcset="./img/spec/photo.avif" type="image/avif">
+                                            <source srcset="./img/spec/photo.webp" type="image/webp">
+                                            <img loading="lazy" src="./img/spec/photo.png" class="image" alt="photo"
+                                                itemprop="image">
+                                        </picture>
+                                    </a>
+                                    <div class="specialties__item-content content-spec" itemprop="articleBody">
+                                        <div class="content-spec__top">
+                                            <span class="author">бакалавриат</span> · <span class="date">01.03.00</span>
+                                        </div>
+                                        <h5 class="content-spec__title">Прикладная математика и информатика</h5>
+                                        <div class="content-spec__prop">
+                                            <span>Очно</span>
+                                            <span>Заочно</span>
+                                            <span>Очно-заочно</span>
+                                            <span>Дистанционно</span>
+                                        </div>
+                                        <div class="content-spec__text">
+                                            <p>Программное обеспечение вычислительных систем ·
+                                                Математическое и программное обеспечение защиты информации · Экономика ·
+                                                Организация педагогическо...</p>
+                                            <a href="#" class="btn btn-reset btn-more">Все 43 профиля</a>
+                                        </div>
+                                    </div>
+                                    <div class="specialties__item-info info-spec">
+                                        <ul class="info-spec__list list-reset">
+                                            <li class="info-spec__item">
+                                                <svg class="icon">
+                                                    <use xlink:href="#icon--zz"></use>
+                                                </svg>
+                                                <svg class="icon">
+                                                    <use xlink:href="#icon--home"></use>
+                                                </svg>
+                                                <svg class="icon">
+                                                    <use xlink:href="#icon--arr"></use>
+                                                </svg>
+
+                                            </li>
+                                            <li class="info-spec__item">
+                                                <span>Бюджетных <span class="no-mobile">мест</span></span> <span
+                                                    class="rusult">260</span>
+                                            </li>
+                                            <li class="info-spec__item">
+                                                <span>Проходной <span class="no-mobile">балл</span></span> <span
+                                                    class="rusult">от 152</span>
+                                            </li>
+                                            <li class="info-spec__item">
+                                                Оплата в год <span class="result">от 90 000 ₽</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <article class="specialties__item" itemscope itemtype="https://schema.org/Article">
+                                    <a href="#" class="specialties__item-img">
+                                        <picture>
+                                            <source srcset="./img/spec/photo.avif" type="image/avif">
+                                            <source srcset="./img/spec/photo.webp" type="image/webp">
+                                            <img loading="lazy" src="./img/spec/photo.png" class="image" alt="photo"
+                                                itemprop="image">
+                                        </picture>
+                                    </a>
+                                    <div class="specialties__item-content content-spec" itemprop="articleBody">
+                                        <div class="content-spec__top">
+                                            <span class="author">бакалавриат</span> · <span class="date">01.03.00</span>
+                                        </div>
+                                        <h5 class="content-spec__title">Фундаментальна и прикладная химия</h5>
+                                        <div class="content-spec__prop">
+                                            <span>Очно</span>
+                                        </div>
+                                        <div class="content-spec__text">
+                                            <p>Программное обеспечение вычислительных систем ·
+                                                Математическое и программное обеспечение защиты информации · Экономика ·
+                                                Организация педагогическо...</p>
+                                            <a href="#" class="btn btn-reset btn-more">Все 43 профиля</a>
+                                        </div>
+                                    </div>
+                                    <div class="specialties__item-info info-spec">
+                                        <ul class="info-spec__list list-reset">
+                                            <li class="info-spec__item">
+                                                <svg class="icon">
+                                                    <use xlink:href="#icon--zz"></use>
+                                                </svg>
+                                                <svg class="icon">
+                                                    <use xlink:href="#icon--home"></use>
+                                                </svg>
+                                                <svg class="icon">
+                                                    <use xlink:href="#icon--arr"></use>
+                                                </svg>
+
+                                            </li>
+                                            <li class="info-spec__item">
+                                                <span>Бюджетных <span class="no-mobile">мест</span></span> <span
+                                                    class="rusult">1 702</span>
+                                            </li>
+                                            <li class="info-spec__item">
+                                                <span>Проходной <span class="no-mobile">балл</span></span> <span
+                                                    class="rusult">от 35.3</span>
+                                            </li>
+                                            <li class="info-spec__item">
+                                                Оплата в год <span class="rusult">от 350 000 ₽</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <article class="specialties__item" itemscope itemtype="https://schema.org/Article">
+                                    <a href="#" class="specialties__item-img">
+                                        <picture>
+                                            <source srcset="./img/spec/photo.avif" type="image/avif">
+                                            <source srcset="./img/spec/photo.webp" type="image/webp">
+                                            <img loading="lazy" src="./img/spec/photo.png" class="image" alt="photo"
+                                                itemprop="image">
+                                        </picture>
+                                    </a>
+                                    <div class="specialties__item-content content-spec" itemprop="articleBody">
+                                        <div class="content-spec__top">
+                                            <span class="author">бакалавриат</span> · <span class="date">01.03.00</span>
+                                        </div>
+                                        <h5 class="content-spec__title">Фундаментальна и прикладная химия</h5>
+                                        <div class="content-spec__prop">
+                                            <span>Очно</span>
+                                        </div>
+                                        <div class="content-spec__text">
+                                            <p>Программное обеспечение вычислительных систем ·
+                                                Математическое и программное обеспечение защиты информации · Экономика ·
+                                                Организация педагогическо...</p>
+                                            <a href="#" class="btn btn-reset btn-more">Все 43 профиля</a>
+                                        </div>
+                                    </div>
+                                    <div class="specialties__item-info info-spec">
+                                        <ul class="info-spec__list list-reset">
+                                            <li class="info-spec__item">
+                                                <svg class="icon">
+                                                    <use xlink:href="#icon--zz"></use>
+                                                </svg>
+                                                <svg class="icon">
+                                                    <use xlink:href="#icon--home"></use>
+                                                </svg>
+                                                <svg class="icon">
+                                                    <use xlink:href="#icon--arr"></use>
+                                                </svg>
+
+                                            </li>
+                                            <li class="info-spec__item">
+                                                <span>Бюджетных <span class="no-mobile">мест</span></span> <span
+                                                    class="rusult">1 702</span>
+                                            </li>
+                                            <li class="info-spec__item">
+                                                <span>Проходной <span class="no-mobile">балл</span></span> <span
+                                                    class="rusult">от 35.3</span>
+                                            </li>
+                                            <li class="info-spec__item">
+                                                Оплата в год <span class="rusult">от 350 000 ₽</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <article class="specialties__item" itemscope itemtype="https://schema.org/Article">
+                                    <a href="#" class="specialties__item-img">
+                                        <picture>
+                                            <source srcset="./img/spec/photo.avif" type="image/avif">
+                                            <source srcset="./img/spec/photo.webp" type="image/webp">
+                                            <img loading="lazy" src="./img/spec/photo.png" class="image" alt="photo"
+                                                itemprop="image">
+                                        </picture>
+                                    </a>
+                                    <div class="specialties__item-content content-spec" itemprop="articleBody">
+                                        <div class="content-spec__top">
+                                            <span class="author">бакалавриат</span> · <span class="date">01.03.00</span>
+                                        </div>
+                                        <h5 class="content-spec__title">Фундаментальна и прикладная химия</h5>
+                                        <div class="content-spec__prop">
+                                            <span>Очно</span>
+                                        </div>
+                                        <div class="content-spec__text">
+                                            <p>Программное обеспечение вычислительных систем ·
+                                                Математическое и программное обеспечение защиты информации · Экономика ·
+                                                Организация педагогическо...</p>
+                                            <a href="#" class="btn btn-reset btn-more">Все 43 профиля</a>
+                                        </div>
+                                    </div>
+                                    <div class="specialties__item-info info-spec">
+                                        <ul class="info-spec__list list-reset">
+                                            <li class="info-spec__item">
+                                                <svg class="icon">
+                                                    <use xlink:href="#icon--zz"></use>
+                                                </svg>
+                                                <svg class="icon">
+                                                    <use xlink:href="#icon--home"></use>
+                                                </svg>
+                                                <svg class="icon">
+                                                    <use xlink:href="#icon--arr"></use>
+                                                </svg>
+
+                                            </li>
+                                            <li class="info-spec__item">
+                                                <span>Бюджетных <span class="no-mobile">мест</span></span> <span
+                                                    class="rusult">1 702</span>
+                                            </li>
+                                            <li class="info-spec__item">
+                                                <span>Проходной <span class="no-mobile">балл</span></span> <span
+                                                    class="rusult">от 35.3</span>
+                                            </li>
+                                            <li class="info-spec__item">
+                                                Оплата в год <span class="rusult">от 350 000 ₽</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <button class="btn btn-reset btn-chance">Показать все специальности</button>
+                </div>
+            </div>
+
+            <div class="full__title">
+                <h3 class="cart-info__title ynuver">Об университете</h3>
+                <span class="full__descr" data-da="ynuver,1,1024,max"><span class="no-tablet">Об</span>
+                    МГТУ им. Н. Э. Баумана</span>
+            </div>
+
+            <div class="about">
+                <div class="about-gallery">
+
+                    <a href="./img/about/full/01.jpg" data-fslightbox="gallery" data-caption="Example title"
+                        data-foo="bar" class="about-gallery__img">
+                        <picture>
+                            <source srcset="./img/about/01.avif" type="image/avif">
+                            <source srcset="./img/about/01.webp" type="image/webp">
+                            <img loading="lazy" src="./img/about/01.lpg" class="image" alt="01">
+                        </picture>
+                    </a>
+
+                    <a href="./img/about/full/02.jpg" data-fslightbox="gallery" data-caption="Example title"
+                        data-foo="bar" class="about-gallery__img">
+                        <picture>
+                            <source srcset="./img/about/02.avif" type="image/avif">
+                            <source srcset="./img/about/02.webp" type="image/webp">
+                            <img loading="lazy" src="./img/about/02.jpg" class="image" alt="02">
+                        </picture>
+                    </a>
+
+                    <a href="./img/about/full/03.jpg" data-fslightbox="gallery" data-caption="Example title"
+                        data-foo="bar" class="about-gallery__img">
+                        <picture>
+                            <source srcset="./img/about/03.avif" type="image/avif">
+                            <source srcset="./img/about/03.webp" type="image/webp">
+                            <img loading="lazy" src="./img/about/03.jpg" class="image" alt="03">
+                        </picture>
+                    </a>
+
+                    <a href="./img/about/full/04.jpg" data-fslightbox="gallery" data-caption="Example title"
+                        data-foo="bar" class="about-gallery__img">
+                        <picture>
+                            <source srcset="./img/about/04.avif" type="image/avif">
+                            <source srcset="./img/about/04.webp" type="image/webp">
+                            <img loading="lazy" src="./img/about/04.jpg" class="image" alt="04">
+                        </picture>
+                    </a>
+
+                    <a href="./img/about/full/05.jpg" data-fslightbox="gallery" data-caption="Example title"
+                        data-foo="bar" class="about-gallery__img">
+                        <picture>
+                            <source srcset="./img/about/05.avif" type="image/avif">
+                            <source srcset="./img/about/05.webp" type="image/webp">
+                            <img loading="lazy" src="./img/about/05.jpg" class="image" alt="05">
+                        </picture>
+                    </a>
+                </div>
+
+                <article class="about-content">
+                    <input type="checkbox" class="read-more-state" id="post-1" />
+                    <span class="read-more-wrap">
+                        <p>Московский университет ― это один из самых старейших университетов России, был основан в 1755
+                            году. Университет известен во всем мире и занимает лидирующие места в рейтингах вузов самых
+                            различных направлений.</p>
+                        <span class="read-more-target">
+                            <p>В 2008 году он получил награду «Европейское качество» «за стремление достичь высокого
+                                качества
+                                образовательных услуг в соответствии с международными стандартами». МГТУ им. Н. Э.
+                                Баумана в
+                                течение более чем 14 лет
+                                является головным вузом Ассоциации технических университетов, в состав которой входят
+                                более
+                                130 российских университетов.</p>
+                            <p>Московский университет ― это один из самых старейших университетов России, был основан в
+                                1755
+                                году. Университет известен во всем мире и занимает лидирующие места в рейтингах вузов
+                                самых
+                                различных направлений.</p>
+                        </span>
+                    </span>
+                    <label for="post-1" class="read-more-trigger">
+                        <span class="btn btn-reset btn-about"></span>
+                    </label>
+                </article>
+
+            </div>
+
+        </div>
+    </div>
+</section>

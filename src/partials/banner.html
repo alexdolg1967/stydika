@@ -1,0 +1,76 @@
+<section class="banner">
+    <div class="container">
+        <div class="banner-image">
+            <picture>
+                <source srcset="./img/banners/photo.avif" type="image/avif">
+                <source srcset="./img/banners/photo.webp" type="image/webp">
+                <img loading="lazy" src="./img/banners/photo.jpg" class="image"
+                    alt="Московский государственный технический университет имени Н.Э. Бáумана">
+            </picture>
+
+            <div class="banner-image__logo">
+                <picture>
+                    <source srcset="./img/banners/logo-kep.avif" type="image/avif">
+                    <source srcset="./img/banners/logo-kep.webp" type="image/webp">
+                    <img loading="lazy" src="./img/banners/logo-kep.png" class="image" alt="logo-kep">
+                </picture>
+            </div>
+
+            <div class="banner-image__buttons">
+                <button class="btn btn-reset btn-primery">
+                    <span>оставить отзыв</span>
+                </button>
+                <button class="btn btn-reset btn-light btn-chance" data-da="banner-content__buttons,0,1024,max">
+                    <span>проверить шансы поступить</span>
+                </button>
+            </div>
+        </div>
+        <div class="banner-content">
+            <div class="banner-content__block">
+                <div class="banner-content__body" itemscope itemtype="http://schema.org/Organization">
+                    <h2 class="banner-content__title" itemprop="name">Московский государственный технический университет
+                        имени Н.Э. Бáумана</h2>
+                    <div class="banner-content__info">
+                        <ul>
+                            <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><span
+                                    itemprop="addressLocality">Москва</span>, <span itemprop="streetAddress">ул.
+                                    Новочеремушкинская</span>, д. 69</li>
+                            <li>Приемная комиссия: <a href="tel:+74991812133" itemprop="telephone">7 (499) 181 21 33</a>
+                            </li>
+                        </ul>
+                        <span class="rate">
+                            <svg class="icon icon-star">
+                                <use xlink:href="#icon--star"></use>
+                            </svg>
+                            <span>2.4</span> (<span>75</span> отзывов)
+                        </span>
+                    </div>
+                </div>
+
+                <div class="banner-content__buttons">
+                    <button class="btn btn-reset btn-light btn-like" data-da="banner-image__buttons,0,1024,max">
+                        <svg class="icon icon-like">
+                            <use xlink:href="#icon--like"></use>
+                        </svg>
+                        <span>В Избранное</span>
+                    </button>
+                    <button class="btn btn-reset btn-light btn-bell">
+                        <svg class="icon icon-bell">
+                            <use xlink:href="#icon--bell"></use>
+                        </svg>
+                    </button>
+                    <button class="btn btn-reset btn-light btn-share" data-da="banner-image__buttons,1,1024,max">
+                        <svg class="icon icon-share">
+                            <use xlink:href="#icon--share"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="banner-content__uploaded">
+                <span>Обновлено 11.11.2011</span>
+                <button class="btn btn-reset btn-light btn-upload">Сообщить об ошибке</button>
+            </div>
+        </div>
+    </div>
+</section>

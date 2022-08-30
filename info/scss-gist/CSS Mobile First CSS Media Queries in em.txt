@@ -1,0 +1,17 @@
+/* smartphones, iPhone, portrait 480x320 phones(min-width:320px) */
+@media screen and (min-width: 20em) {}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. (min-width:481px) */
+@media screen and (min-width: 30.06em) {}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones (min-width:641px) */
+@media screen and (min-width: 40.06em) {}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops (min-width:961px) */
+@media screen and (min-width: 60.06em) {}
+
+/* big landscape tablets, laptops, and desktops (min-width:1025px) */
+@media screen and (min-width: 64.06em) {}
+
+/* hi-res laptops and desktops (min-width:1281px) */
+@media screen and (min-width: 80.06em) {}

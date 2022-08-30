@@ -1,0 +1,89 @@
+<header class="header" id="header">
+
+    <div class="header-top">
+        <div class="container">
+            <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                <span class="burger__line"></span>
+            </button>
+            <div class="header-top__block">
+                <a href="/" class="header-top__logo" itemscope="" itemtype="http://schema.org/ImageObject"
+                    itemprop="logo">
+                    <img src="./img/logo.svg" class="header-top__logo-img" alt="Логотип" loading="lazy">
+                </a>
+                <button class="btn-reset header-top__city" aria-label="Выбрать город">
+                    <svg class="icon icon-city">
+                        <use xlink:href="#icon--city"></use>
+                    </svg>
+                    <span>Москва</span>
+                </button>
+
+                <div class="header-top__search" aria-label="Найти учебное заведение, специальность или профессию"
+                    data-da="top-menu,0,1024,max">
+                    <div class="header-top__search-wrapper">
+                        <svg class="icon icon-search">
+                            <use xlink:href="#icon--search"></use>
+                        </svg>
+                        <input type="search" name="search" id=""
+                            placeholder="Учебное заведение, специальность или профессия">
+                    </div>
+                </div>
+            </div>
+            <div class="header-top__user user" aria-label="Ваш профиль">
+                <div class="user-like">
+                    <svg class="icon icon-like">
+                        <use xlink:href="#icon--like"></use>
+                    </svg>
+                    <span>1</span>
+                </div>
+                <a href="#" class="user-profile" data-da="top-menu,4,768,max">
+                    <span>Екатерина</span>
+                    <picture>
+                        <source srcset="./img/avatar.avif" type="image/avif">
+                        <source srcset="./img/avatar.webp" type="image/webp">
+                        <img loading="lazy" src="./img/avatar.png" class="image" alt="">
+                    </picture>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="container">
+            <nav class="header-bottom__menu top-menu" aria-label="Верхнее меню" data-menu>
+                <ul class="top-menu__list list-reset dragscroll">
+                    <li class="top-menu__item">
+                        <a href="#" class="top-menu__link link-active">Вузы</a>
+                    </li>
+                    <li class="top-menu__item">
+                        <a href="#" class="top-menu__link">Колледжи</a>
+                    </li>
+                    <li class="top-menu__item">
+                        <a href="#" class="top-menu__link">Техникумы</a>
+                    </li>
+                    <li class="top-menu__item">
+                        <a href="#" class="top-menu__link">Училища</a>
+                    </li>
+                    <li class="top-menu__item">
+                        <a href="#" class="top-menu__link">Специальности</a>
+                    </li>
+                    <li class="top-menu__item">
+                        <a href="#" class="top-menu__link">Профессии</a>
+                    </li>
+                    <li class="top-menu__item">
+                        <a href="#" class="top-menu__link">Отзывы</a>
+                    </li>
+                    <li class="top-menu__item">
+                        <a href="#" class="top-menu__link">Учебным заведениям</a>
+                    </li>
+                    <li class="top-menu__item">
+                        <a href="#" class="top-menu__link ">Тест на профориентацию</a>
+                    </li>
+                </ul>
+            </nav>
+            <svg class="icon next">
+                <use xlink:href="#icon--next"></use>
+            </svg>
+        </div>
+    </div>
+
+</header>

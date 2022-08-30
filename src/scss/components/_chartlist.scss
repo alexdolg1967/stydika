@@ -1,0 +1,50 @@
+.ct-golden-section {
+    flex: 0 0 860px;
+    width: 860px;
+    height: 100%;
+    background-color: var(--bg-content-color);
+    box-shadow: 0px 7px 13px rgba(49, 71, 129, 0.07);
+    border-radius: 10px;
+    scroll-snap-align: start;
+}
+
+.ct-series-a .ct-line {
+    /* Цвет линии серии */
+    stroke: rgba(#abc8ea, 0.8);
+    /* Толщина линии */
+    stroke-width: 1px;
+    /* Пунктирная линия по шаблону */
+    // stroke-dasharray: 10px 20px;
+}
+.ct-series-a .ct-area {
+    // цвет фона под линией
+    fill: #abc8ea;
+}
+.ct-series-a .ct-point {
+    /* Цвет точек */
+    stroke: rgba(#abc8ea, 0.8);
+    /* Размер точек */
+    stroke-width: 8px;
+    /* Сделать точки квадратами */
+    stroke-linecap: circle;
+}
+.ct-series-b .ct-line {
+    /* Цвет линии серии */
+    stroke: rgba(#0656b4, 0.6);
+    /* Толщина линии */
+    stroke-width: 1px;
+    /* Пунктирная линия по шаблону */
+    // stroke-dasharray: 10px 20px;
+}
+.ct-series-b .ct-area {
+    // цвет фона под линией
+    fill: #0656b4;
+}
+.ct-series-b .ct-point {
+    /* Цвет точек */
+    stroke: rgba(#0656b4, 0.6);
+    /* Размер точек */
+    stroke-width: 8px;
+    /* Сделать точки квадратами */
+    stroke-linecap: circle;
+}

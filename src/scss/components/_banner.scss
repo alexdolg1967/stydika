@@ -1,0 +1,252 @@
+.banner {
+    &-image {
+        width: 100%;
+        position: relative;
+        height: 122px;
+
+        @include for-small {
+            height: 230px;
+        }
+
+        @include for-tablet {
+            height: 360px;
+        }
+
+        & picture,
+        & img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            overflow: hidden;
+        }
+
+        &__logo {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            width: 40px;
+            height: 40px;
+            background: var(--bg-content-color);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include for-desktop {
+                top: 16px;
+                left: 16px;
+                width: 40px;
+                height: 40px;
+                border-radius: 10px;
+            }
+
+            & picture,
+            & img {
+                width: 27px;
+                height: 32px;
+            }
+        }
+
+        &__buttons {
+            position: absolute;
+            right: 8px;
+            bottom: 8px;
+            display: flex;
+            align-items: center;
+            column-gap: var(--gap);
+
+            @include for-tablet {
+                right: 16px;
+                bottom: 24px;
+            }
+
+            & .btn-primery {
+                display: none;
+
+                @include for-desktop {
+                    display: flex;
+                }
+            }
+
+            & .btn-light:hover {
+                color: var(--bg-content-color);
+                background-color: var(--accent-color);
+                text-decoration: none;
+            }
+
+            & .btn-like,
+            & .btn-share {
+                padding: 0;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &-content {
+        width: 100%;
+        padding: 16px;
+        display: flex;
+        gap: var(--gap);
+        flex-wrap: wrap;
+        background-color: var(--bg-content-color);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        @include for-tablet {
+            padding: 24px;
+        }
+
+        &__block {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: var(--gap);
+
+            @include for-desktop {
+                column-gap: 50px;
+                flex-wrap: nowrap;
+            }
+        }
+
+        &__body {
+            flex: 0 1 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-family: var(--font-romular);
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.2;
+
+            @include for-desktop {
+                font-size: 31px;
+            }
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            color: var(--text-search-color);
+
+            @include for-tablet {
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+            }
+
+            & .rate {
+                display: inline-flex;
+                align-items: center;
+                column-gap: 4px;
+            }
+            & ul {
+                padding: 0;
+                margin-top: 0;
+                margin-bottom: 2px;
+                display: inline-flex;
+                flex-wrap: wrap;
+                list-style: none;
+                column-gap: var(--gap);
+
+                @include for-tablet {
+                    margin-left: 10px;
+                    column-gap: 10px;
+                }
+
+                @include for-desktop {
+                    margin-left: 0;
+                    padding-left: 5px;
+                    list-style: disc;
+                }
+
+                & li {
+                    margin: 0;
+                    white-space: nowrap;
+
+                    @include for-desktop {
+                        margin-left: 25px;
+                    }
+                }
+            }
+        }
+
+        &__buttons {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            @include for-desktop {
+                width: auto;
+                flex: 0 0 235px;
+                align-items: flex-start;
+                column-gap: 8px;
+            }
+
+            & .btn-like {
+                padding: 4px;
+                border: 1px solid var(--btn-border-color);
+                border-radius: 20px;
+                letter-spacing: normal;
+                color: var(--text-color);
+                text-transform: capitalize;
+
+                @include for-desktop {
+                    padding: 4px 16px 4px 8px;
+                }
+
+                &:hover {
+                    color: var(--bg-content-color);
+                    background-color: var(--accent-color);
+                    text-decoration: none;
+                }
+            }
+
+            & .btn-chance {
+                background: #dfe9f5;
+                border-radius: 5px;
+            }
+
+            & .btn-bell,
+            & .btn-share {
+                padding: 0;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+
+                &:hover {
+                    background-color: var(--accent-color);
+                }
+            }
+
+            & .btn-bell {
+                display: none;
+
+                @include for-desktop {
+                    display: flex;
+                }
+            }
+        }
+
+        &__uploaded {
+            flex: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            column-gap: var(--gap);
+
+            & span {
+                color: var(--text-search-color);
+            }
+
+            @include for-small {
+                justify-content: flex-end;
+            }
+        }
+    }
+}

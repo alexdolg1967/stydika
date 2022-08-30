@@ -1,0 +1,185 @@
+.header {
+    position: relative;
+    background-color: var(--bg-content-color);
+    overflow-x: hidden;
+
+    &-top {
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        @include for-desktop {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+
+        & .container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 16px;
+        }
+
+        &__block {
+            flex: 1 1 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 16px;
+
+            @include for-desktop {
+                justify-content: flex-start;
+            }
+        }
+
+        &__logo {
+            display: block;
+            width: 88px;
+            height: 32px;
+        }
+
+        &__city {
+            display: none;
+
+            @include for-desktop {
+                min-width: 145px;
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+            }
+        }
+
+        &__search {
+            width: 100%;
+            max-width: 590px;
+            display: flex;
+            align-items: center;
+
+            @include for-desktop {
+                flex: 1 1 auto;
+                margin: 0;
+            }
+
+            &-wrapper {
+                position: relative;
+                width: 100%;
+                height: 48px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 48px;
+                padding-right: 8px;
+                background: #f1f1f1;
+                border-radius: 100px;
+
+                & svg {
+                    position: absolute;
+                    top: 50%;
+                    left: 5px;
+                    transform: translateY(-50%);
+                }
+
+                & input {
+                    width: 100%;
+                    font-size: 14px;
+                    line-height: 22px;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    color: var(--text-search-color);
+                    text-align: center;
+
+                    &::placeholder {
+                        color: var(--text-search-color);
+                    }
+                }
+            }
+        }
+
+        &__user {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+        }
+    }
+
+    &-bottom {
+        position: relative;
+        width: 100%;
+        z-index: 100;
+        transition: 0.5s;
+
+        @include for-desktop {
+            padding-bottom: 16px;
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+
+            &.sticky {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 12px 0;
+                background-color: var(--bg-content-color);
+            }
+
+            &.sticky + .main {
+                padding-top: 60px;
+            }
+        }
+
+        & .container {
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 8px;
+                width: 60px;
+                background: linear-gradient(90deg, rgba(34, 34, 34, 0) 10%, #ffffff 60%);
+                z-index: 1;
+            }
+        }
+
+        & .next {
+            display: none;
+
+            @include for-desktop {
+                display: block;
+                position: absolute;
+                top: -7px;
+                right: 0;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+.user {
+    &-like {
+        display: flex;
+        align-items: center;
+    }
+
+    &-profile {
+        padding: 8px 0;
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+
+        @include for-desktop {
+            padding: 0;
+        }
+
+        & picture,
+        & img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.top-menu {
+    position: fixed;
+    top: var(--header-top-height);
+    left: -102%;
+    width: 100%;
+    height: calc(100vh - var(--header-top-height));
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: var(--gap);
+    background-color: var(--bg-content-color);
+    transition: 0.4s;
+    z-index: 100;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    &.menu--active {
+        left: 0;
+    }
+
+    @include for-desktop {
+        position: relative;
+        top: 0;
+        height: initial;
+        left: initial;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+        background-color: transparent;
+        z-index: 1;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__list {
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 1rem 3rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+
+        @include for-desktop {
+            position: relative;
+            padding: 0;
+            flex-direction: row;
+            column-gap: 30px;
+            overflow: scroll;
+            cursor: grab;
+            scroll-snap-align: start;
+            overflow: hidden;
+        }
+    }
+
+    &__link {
+        padding: 2.5px 10px;
+        border-radius: 20px;
+        letter-spacing: 0.03em;
+        transition: 0.3s;
+        white-space: nowrap;
+
+        &.link-active {
+            background-color: var(--bg-color);
+        }
+
+        &:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+    }
+}

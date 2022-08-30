@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {"title": "Карточка учебного заведения"})
+
+<body class="page__body">
+    @include('partials/svg.html')
+    <!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
+    <div class="site-container">
+        @include('partials/header.html')
+        <h1 class="visually-hidden">Где получить образование</h1>
+        <main class="main" id="main">
+            @include('partials/breadcrumps.html')
+            @include('partials/banner.html')
+            @include('partials/cart-info.html')
+
+        </main>
+        @include('partials/footer.html')
+    </div>
+</body>
+
+</html>

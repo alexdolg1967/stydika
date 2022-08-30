@@ -1,0 +1,7 @@
+.burger {
+    @include burger;
+    display: block;
+    @include for-desktop {
+        display: none;
+    }
+}

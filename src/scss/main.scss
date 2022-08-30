@@ -1,0 +1,23 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "icons";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/burger";
+@import "./components/top-menu";
+@import "./components/breadcrumps";
+@import "./components/banner";
+@import "./components/swiper";
+@import "./components/cart-info";
+@import "./components/mark";
+@import "./components/chartlist";
+@import "./components/cart-info-about";
+@import "./components/read-more";
+@import "./components/cart-nav";
+
+@import "./components/footer";
+@import "./components/scroll-up";
